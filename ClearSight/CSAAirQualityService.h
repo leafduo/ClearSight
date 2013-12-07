@@ -12,6 +12,6 @@
 
 @interface CSAAirQualityService : NSObject
 
-@property (nonatomic, strong) RACSignal *airQualitySignal;
+@property (nonatomic, strong) RACSignal *currentAirQuality;
 
 @end

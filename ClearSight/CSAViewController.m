@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 	
-    RAC(self.AQILabel, text) = [_airQualityService.airQualitySignal map:^NSString *(CSAAirQuality *airQuality) {
+    RAC(self.AQILabel, text) = [_airQualityService.currentAirQuality map:^NSString *(CSAAirQuality *airQuality) {
         return [airQuality.aqi stringValue];
     }];
 }

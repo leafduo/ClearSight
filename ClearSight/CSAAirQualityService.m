@@ -12,9 +12,9 @@
 
 @implementation CSAAirQualityService
 
-- (RACSignal *)airQualitySignal {
-    if (!_airQualitySignal) {
-        _airQualitySignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+- (RACSignal *)currentAirQuality {
+    if (!_currentAirQuality) {
+        _currentAirQuality = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             [[CSAHTTPClient sharedClient] getCurrentAQIWithCompletion:^(CSAAirQuality *airQuality, NSError *error) {
                 if (error) {
                     [subscriber sendError:error];
@@ -25,7 +25,7 @@
             return nil;
         }];
     }
-    return _airQualitySignal;
+    return _currentAirQuality;
 }
 
 @end
