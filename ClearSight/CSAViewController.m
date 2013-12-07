@@ -32,9 +32,9 @@
         return [airQuality.aqi stringValue];
     }];
     
-    RAC(self.view, backgroundColor) = [_airQualityService.currentAirQuality map:^UIColor *(CSAAirQuality *airQuality) {
-        return [UIColor colorWithHue:.272222222 saturation:50/[airQuality.aqi floatValue] brightness:0.3 alpha:1];
-    }];
+    RAC(self.view, backgroundColor) = [[_airQualityService.currentAirQuality map:^UIColor *(CSAAirQuality *airQuality) {
+        return [UIColor colorWithHue:.563888889 saturation:0.46 brightness:50/[airQuality.aqi floatValue] alpha:1];
+    }] deliverOn:[RACScheduler mainThreadScheduler]];
 }
 
 - (void)didReceiveMemoryWarning
