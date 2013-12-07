@@ -7,17 +7,30 @@
 //
 
 #import "CSAViewController.h"
+#import "CSAAirQualityService.h"
+#import "CSAAirQuality.h"
 
 @interface CSAViewController ()
 
+@property (nonatomic, strong) IBOutlet UILabel *AQILabel;
+
 @end
 
-@implementation CSAViewController
+@implementation CSAViewController {
+    CSAAirQualityService *_airQualityService;
+}
+
+- (void)awakeFromNib {
+    _airQualityService = [[CSAAirQualityService alloc] init];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    RAC(self.AQILabel, text) = [_airQualityService.airQualitySignal map:^NSString *(CSAAirQuality *airQuality) {
+        return [airQuality.aqi stringValue];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
