@@ -1,6 +1,6 @@
 //
 //  CSAAirQuality.m
-//  AQIMonitor
+//  ClearSight
 //
 //  Created by Zuyang Kou on 12/5/13.
 //  Copyright (c) 2013 leafduo.com. All rights reserved.
