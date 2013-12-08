@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 leafduo.com. All rights reserved.
 //
 
-#import <Specta.h>
-#define EXP_SHORTHAND
-#import <Expecta.h>
 #import "CSAAirQualityService.h"
 #import "CSAAirQuality.h"
 

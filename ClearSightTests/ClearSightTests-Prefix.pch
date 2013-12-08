@@ -1,0 +1,13 @@
+//
+//  ClearSightTests-Prefix.pch
+//  ClearSight
+//
+//  Created by Zuyang Kou on 12/8/13.
+//  Copyright (c) 2013 leafduo.com. All rights reserved.
+//
+
+#import "ClearSight-Prefix.pch"
+
+#import <Specta.h>
+#define EXP_SHORTHAND
+#import <Expecta.h>

@@ -67,6 +67,7 @@
 		9236B7DE1853C55B007AECDD /* CSAAirQuality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAAirQuality.h; sourceTree = "<group>"; };
 		9236B7DF1853C55B007AECDD /* CSAAirQuality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAAirQuality.m; sourceTree = "<group>"; };
 		92B4207C18546677004886AE /* CSAAirQualityServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAAirQualityServiceSpec.m; sourceTree = "<group>"; };
+		92B4207E18547497004886AE /* ClearSightTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearSightTests-Prefix.pch"; sourceTree = "<group>"; };
 		D585E83A52C5448FB2467B1E /* Pods-ClearSight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearSight.xcconfig"; path = "Pods/Pods-ClearSight.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +176,7 @@
 			children = (
 				9236B7CC1853C514007AECDD /* ClearSightTests-Info.plist */,
 				9236B7CD1853C514007AECDD /* InfoPlist.strings */,
+				92B4207E18547497004886AE /* ClearSightTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -511,7 +513,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClearSight/ClearSight-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClearSightTests/ClearSightTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -535,7 +537,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClearSight/ClearSight-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClearSightTests/ClearSightTests-Prefix.pch";
 				INFOPLIST_FILE = "ClearSightTests/ClearSightTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
