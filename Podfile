@@ -7,4 +7,5 @@ end
 
 target :ClearSightTests do
   pod 'Specta'
+  pod 'Expecta'
 end
